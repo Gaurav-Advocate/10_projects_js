@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate you Marks + Percentage</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body>
+    <div class="h-screen w-full bg-main-body bg-cover bg-center bg-no-repeat">
+      <div
+        class="flex h-full w-3/6 flex-col items-center justify-center max-sm:w-full sm:w-5/6 md:w-4/6"
+      >
+        <div
+          class="flex h-[470px] max-w-md flex-col gap-10 rounded-3xl bg-primary p-14 shadow-md shadow-secondary max-sm:gap-0 max-sm:p-12"
+        >
+          <form
+            action=""
+            onsubmit="totalMarks(event)"
+            class="grid w-full grid-cols-2 grid-rows-2 gap-8 bg-primary text-white max-sm:grid-cols-1"
+          >
+            <input
+              required
+              type="number"
+              name="marks"
+              id="accounts"
+              placeholder="Accounts"
+              min="0"
+              max="100"
+              class="h-9 border-spacing-2 rounded-md border bg-transparent px-3 text-white focus:outline"
+            />
+            <input
+              required
+              type="number"
+              name="marks"
+              id="eco"
+              placeholder="Economics"
+              min="0"
+              max="100"
+              class="h-9 border-spacing-2 rounded-md border bg-transparent px-3 text-white focus:outline"
+            />
+            <input
+              required
+              type="number"
+              name="marks"
+              id="bst"
+              min="0"
+              max="100"
+              placeholder="Business Studies"
+              class="h-9 border-spacing-2 rounded-md border bg-transparent px-3 text-white focus:outline"
+            />
+            <input
+              required
+              type="number"
+              name="marks"
+              id="eng"
+              min="0"
+              max="100"
+              placeholder="English"
+              class="h-9 border-spacing-2 rounded-md border bg-transparent px-3 text-white focus:outline"
+            />
+
+            <div class="flex w-80 justify-center">
+              <button
+                type="submit"
+                id="calculate"
+                class="rounded-xl bg-secondary px-4 py-2 text-lg font-bold text-white hover:bg-blue-900"
+              >
+                Calculate
+              </button>
+            </div>
+          </form>
+          <p id="displayAns" class="mt-12 text-white max-sm:mt-8 max-sm:text-center"></p>
+        </div>
+        <div class="flex flex-col pt-16 text-4xl font-semibold text-primary">
+          <div class="pl-20">Calculate Your</div>
+          <div class="text-7xl font-extrabold">Percentage</div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
