@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Maths</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="bg-red-200">
+      <div class="grid h-screen place-items-center bg-hero bg-cover bg-center">
+        <div
+          class="flex h-[320px] w-[600px] flex-col items-center justify-center gap-8 rounded-3xl border-solid border-borderColor bg-form p-11 font-semibold shadow-lg shadow-yellow-50"
+        >
+          <div class="text-4xl font-bold text-primary">
+            <h2>Score -> <span id="score">0</span></h2>
+          </div>
+          <h4 id="question" class="text-3xl"></h4>
+          <form
+            action=""
+            id="questionForm"
+            onsubmit="checkAnswer(event)"
+            class="flex w-full flex-col gap-8"
+          >
+            <input
+              required
+              type="number"
+              name="calAns"
+              id="inputAns"
+              class="h-11 w-full rounded-lg bg-transparent p-4 text-xl font-medium outline outline-1 outline-black focus:outline focus:outline-2 focus:outline-primary"
+            />
+            <button
+              id="submitAns"
+              type="submit"
+              class="w-full rounded-xl bg-primary px-4 py-2 text-3xl font-medium text-white"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div id="feedCorrect" class="hidden border bg-green-600 shadow-md shadow-green-300 p-4 text-xl font-semibold text-white">
+          Your answer is Correct and Your score is <span id="scoreIn"></span>
+        </div>
+        <div id="feedWrong"  class="hidden border bg-red-600 shadow-md shadow-red-300 p-4 text-xl font-semibold text-white">
+          Your answer is Wrong Your score is <span id="scoreInWrong"></span> and answer is <span id="wrongAnsIn"></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
