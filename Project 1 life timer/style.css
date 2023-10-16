@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Oswald", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.background {
+  background-image: url("mountain.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.settings {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.settings i {
+  font-size: 4.3rem;
+  color: white;
+  text-align: center;
+}
+
+.inputData input {
+  padding: 1rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.inputData button {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 1rem;
+}
+
+.timerCount {
+  margin-top: 2rem;
+  display: flex;
+  gap: 5.3rem;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.timerCount h2 div {
+  display: grid;
+  place-items: center;
+  height: 10rem;
+  background-color: #f7f7f7;
+  color: black;
+  max-width: 10rem;
+  max-height: 20rem;
+}
+
+.hide {
+  display: none;
+}
